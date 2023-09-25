@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Bienvenido</string>
+    <string name="navigation_drawer_open">Open </string>
+    <string name="navigation_drawer_close">Close </string>
+    <string name="title_active_login">Group Gym </string>
+    <string name="password">Contraseña</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="current_password">Contraseña actual</string>
+    <string name="name">Nombre completo</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="repeat_password">Confirma la contraseña</string>
+    <string name="signup">Sign Up</string>
+    <string name="text_signup">No tienes cuenta?</string>
+    <string name="link_signup">Sin up</string>
+    <string name="all">TODO</string>
+    <string name="user_email">userdefault@gmail.com</string>
+    <string name="user_name">User Default</string>
+    <string name="update_profile">Guardar</string>
+    <string name="delete_account">Eliminar cuenta</string>
+    <string name="change_password">Cambiar contraseña</string>
+    <string name="forget_password">¿olvidaste tu contraseña?</string>
+    <string name="title_check_email">Verificacion de Email</string>
+    <string name="subtitle_check_email">Para completar su registro. ¡Por favor! verifica su correo y después de clic en continuar.</string>
+    <string name="continue_check_email">Continuar</string>
+    <string name="title_account_recovery">Recuperación de la cuenta</string>
+    <string name="subtitle_account_recovery">Ingresa tu email para que se te pueda enviar un correo con los pasos para cambiar tu contraseña.</string>
+    <string name="recovery_account">Enviar</string>
+    <string name="title_update_password">Cambio de contraseña</string>
+    <string name="subtitle_update_password">Por motivos de seguridad para cambiar tu contraseña, primero debes ingresar tu contraseña actual.</string>
+    <string name="title_delete_account">Eliminar cuenta</string>
+    <string name="subtitle_delete_account">Por motivos de seguridad para eliminar tu cuenta por completo, debes de ingresar tu contraseña.</string>
+    <string name="delete">Eliminar</string>
+    <string name="app_name1">PrimaryDetailFlowKotlin</string>
+    <string name="title">Bienvenido a Urphyfoods Gym </string>
+    <string name="subtitle">Eliga su Rutina.</string>
+    <string name="all1">TODO</string>
+    <string name="name1">Shadow of the Tomb Raider</string>
+    <string name="date">12 de septiembre de 2018</string>
+    <string name="rating">4.4</string>
+    <string name="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, suscipit exercitationem asperiores, voluptatibus ratione veritatis fugiat tempora, culpa iure repellat temporibus natus facilis alias esse magnam quaerat fuga pariatur?</string>
+    //app store
+    <string name="title_main">Lista de videjuegos</string>
+    <string name="sub_title_main">Aprovecha las Super Ofertas </string>
+    <string name="price">40 S./</string>
+    <string name="name_form">Nombre</string>
+    <string name="date_form">Fecha</string>
+    <string name="price_form">Precio</string>
+    <string name="action_form">Guardar</string>
+    <string name="description_form">Descripción</string>
+
+    <integer-array name="id">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+
+    <string-array name="name">
+        <item>Ejericio Basico para Pectorales </item>
+        <item>Ejericio Basico para Bicep</item>
+        <item>Ejericio Basico para Pierna</item>
+        <item>Ejericio Basico para Tricep</item>
+        <item>Ejericio Basico para Gluteos </item>
+        <item>Cardio para Principiantes </item>
+    </string-array>
+
+    <string-array name="date">
+        <item>URPHYFOODS GYM </item>
+        <item>URPHYFOODS GYM</item>
+        <item>URPHYFOODS GYM</item>
+        <item>URPHYFOODS GYM</item>
+        <item>URPHYFOODS GYM</item>
+        <item>URPHYFOODS GYM</item>
+    </string-array>
+
+    <string-array name="rating">
+        <item>4.4</item>
+        <item>4.3</item>
+        <item>4.8</item>
+        <item>4.8</item>
+        <item>4.4</item>
+        <item>4.8</item>
+    </string-array>
+
+
+    <string-array name="description">
+        <item>Recuerda comenzar con poco peso y con secuencias más bien cortas (no más de 10 a 15 repeticiones) para ir incrementando los ejercicios a medida que vayas obteniendo logros. Los períodos de tiempo en que hagas los ejercicios para el pecho tampoco deberían superar los 30 o 40 minutos, al menos al principio </item>
+        <item>Hay que entrenar bíceps con efectividad, cuidando la técnica y la planificación de la rutina para que sea más cómoda la tarea de desarrollar brazo. Para alcanzar este objetivo, te proponemos a continuación algunos consejos, ejercicios y rutinas adecuadas. Como verás, es posible tener unos bíceps grandes y que esto vaya en sintonía con un resto del tren superior armonizado.</item>
+        <item>Zancadas caminando: 12 repeticiones con cada pierna, 3 series y descanso de medio minuto entre serie y serie. ...
+Sentadillas aéreas: 12 repeticiones, 3 series sin descanso. ...
+Sentadillas con salto: 12 repeticiones, 3 series y 30 segundos de descanso entre serie.</item>
+        <item>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, suscipit exercitationem asperiores, voluptatibus ratione veritatis fugiat tempora, culpa iure repellat temporibus natus facilis alias esse magnam quaerat fuga pariatur?</item>
+        <item>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, suscipit exercitationem asperiores, voluptatibus ratione veritatis fugiat tempora, culpa iure repellat temporibus natus facilis alias esse magnam quaerat fuga pariatur?</item>
+        <item>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, suscipit exercitationem asperiores, voluptatibus ratione veritatis fugiat tempora, culpa iure repellat temporibus natus facilis alias esse magnam quaerat fuga pariatur?</item>
+    </string-array>
+
+    <string-array name="url">
+        <item>https://lh3.googleusercontent.com/VadL9BjquNCKKE9rc0MLp7Hvv15l4420al-zPBzHG9z9gbiyJL73EJSsyf96ufxrcMku_WkFcGXjdZ3EwMn56jA3DT1AkwSAeTXZJOoRIU8KqnQZTCh9u8POfHpexYDZsRKdNY5YNRqBVglxAzTHoaKol_ygLRvDezsy6azX1aeq9N0wY4BpGbQPzCmwoi0-Oirhv0cSPIQbrfBspawi4UKFJmt81IFGITvFw5kMcD531WXhpujQQUDHW3MBsyjWyI1jG6FxZ_a1Rjux23Mlrs75MZs1tKz91tCDy8In-YoVCMRQIxFR54fgf5bc5IgsytdRuLhX7AcZdqvbM835UeBUaY0EOI0tMHyWemjP-eolXeEhqGm6FuThbRfZGq6wcERvVaM3gZreGL4mZPdkXgWDdCWz-oj-w7j22Emc3GzbAPKDAyQ8Acja_coLA531rb7K17Qa6Lu4o22sqkbgt13LFSNe6097bED4_QR5IznWJK-TEyAWYLDqAD9r5Ewx4hG0NVQNxoFfVf3dPf3yt4f9OwdTwOcPL8b9X2ChZJjkI9dcHO9Iw0edF5n1CN_VDj2nULfADQ1JNANO-Emuj1qBvAs_YRcwQxI7fUb9DSm1-OvYHFvs2TtzI4r4zvruBsQtt1zKB9e_t_neXizHV9cXFa3HDAofyxFzhwcyM_XaspTcLjK9TYIaL0uNlgciBzdKLkZhTkZ4ggZa32RM-KRbGCZli18nW7ai3Q6EKqov_9FgFx5YxgFcmscr=w727-h969-no?authuser=0</item>
+        <item>https://lh3.googleusercontent.com/KCSc0ELtsJ8JnH0oJ8V_urdeeXKDtZFkZX9rh_y5jfE6rf4Prgw3Is4PkUtpOfB6VEVbTQt7FQRL63qf8f33rs6NNPIIFGVFMpBsyTPPjK39v5Zx9A3N2KqLNK7GBQfm3Y_AnybDVkjD-h4vRtHRk2g2nA-MzjrhpQ4cMDvdG-GlbDzGXB3zfWDDIhGa2vD3JMYIABu7rY2VKPuLDYwdJadPTQtqJBD7vieY_oh0yqBDVuHwaOf19DI1k8rGV2o75q0rzF406-tHS4leF_S-n0pSurJoCwp3p0XHKPbabHlTIpUmXF4UOiy3VvmsKT2UT9JPv2AsTYEg7IqDcc3nMaIQvNMC9zWvA2bHb8yriqxUD2Sh8rvr42nWkudLp85TU2YIQ-oEWI_eaJw7IH3KdI-sLrjH3cv5KWpj2eKzlTkxGwgJzoztngefeYZ5pm1iflhazIKG8FpFRGl8M7ZiJG7N4IMrTNa2ZPdl-aZde15oF9nOrujSl8BOhBfRFSjHIaU25NKwj1t-w9HulMisoQad3hfP9oEaasg5RX1ZHZare7mWVCX-VFJVRHPI4JAZlzupGzZhZbPu-yF30htkT6PW1Aluh3Ae8I8Cc7BsPJEZzhue3_OPMgK3A8hvzh59jVxD6FyDRX0ulUH8bv1vTcAuW_YdWKoS_zI-_9picuhJJobKmdG4PYHSXDoOJcyECHuoE9YYntFYdi4FhjGzrfmXm7dUR8aOaEIvf2CoFfZ9ezQIfSqsQqb0HxPF=w727-h969-no?authuser=0</item>
+        <item>https://lh3.googleusercontent.com/7xRrDkH3LL8bHSjNHrBDMO1oUb71Q3NfjVabr4-dFvsiTgbboNxqo4y05FKpAW6tyLZLNtHLzxzCojLpZmOmmgN3KI-vo5nWsbsUzKf5ZVMZ-4SGlCaT9cgT7wD7iR5thZ77_QXqwW5GByDTazFONgAWk7t8F8q5w_9gjGPFxf4HFWO_SHQu0VwTcZpCszPn_ggoDcvoJC6MgYUF_Td-JH1bgsvJDZmzlBQ90KAoxBSHLnUjTA-idvSBMIx2w7IUwPk2v79HuFEI4cBIX715czRumPl7i1D-0eUX0_iRPRAQ3mtHhYG1keSMgkJfkWpERdaIwwiRvJTqumjGeP2BrBeGU76zynrwfkOqFojGO85rfuK1b4bgQok-vC2uBA3UQr6_kpvj4oy5XQz6pgXkSHN3LHXW9a4bK76hz4QeORZVjdEHEO4dkkfqC8MIcaaKcDgnIxXDQo67VDOwKi8vEZUQDYvpkeFUkDCFYJofYH9EXm-agBAkmRSLORnhDSnsZTRk91pdzGEgovLHJ1zNBGkw2Uq96y2QPO_ncyEcQDuIkxHcEHH8pB532Q3uBiaVMaAq6uOXTQPK0GuGSarjsxfpayyE7464QpLIHhe54Zit5i7LAN5V3DxKh7rhfZmbZjGXsCuUIsMR7BM0r1vOYqM0YaaKYDxOz2Y8TUAd5aWSna_gdQP9woni9cLlL_3vB6sUlSBTSFNlgOUYafe1AH7VWaX69r_90aT-HL3hnQwlseiFYtkThQDboA=w612-h912-no?authuser=0</item>
+        <item>https://lh3.googleusercontent.com/ZMlPjf8R2ppi7twmVNqNbC8e-oL2L8JR5ENwZj1oc8o59r7i2SWRcyyZeGvvSHazR989_MVKCaB_ydaDg3LD_a9nCYWfow928sQnEVT4CAxiQsGRi-Pk7HGBeDdTvXrV9tn15u1OF8QkDq8_qEX_rtPhlBybLhLVKrFZNiTOxMjMNZY4TqeFyj-ZH4lBm2tSYbC23a5tQmZQWO_eVbkkowSWJWQ-b9AlCPKMMRpEEwW2oNgw3aRp4_bfdPsMSQYLHU0hWowXV_jCw2SrCFbGK6vR-xjjtfpDV4Uv8ALtFqPrQVIhnkYZKAf6LTBrGDXdkcmwSqIDjsSEa8KsYR_S1Be5PgZWi5aYUSlX9ED9w_iE5TSUTZzbftjW06AbCuWXp0W9zHiXG_BlLFeilKaDm5jhTGcpMtHwYAWXX-h0Vgxeb1rS1AFLaOEQQX9yBEBEJ6MiCiAN2kqTu5rUkhbclMTPPnfF5koVh-DQxrOMzhLt-CKWvIm20WXc3DWXBIe5Gk6RVN6g4ZLIwQJ8P-8ReKwAl7FjhvgeYDC5A4Q5MkrfpggAJGz7gy45kTDkH3ji4_L34auNveGQT2zpCD3K73rHN8yuDmslUBxair9CSZg46b5gCIQqANjifjAgDZazM4ZBcs0od16umTicmg8UeErlLSf9fwZcGcKklT6kTentDxJjzwosYRtJ-tndc2MxYmvo0micgQBrj_WZSV_gKb7Mu16yVspcWb9e6hJ58LfmSCprt-UxOsiz9oc=w603-h912-no?authuser=0</item>
+        <item>https://lh3.googleusercontent.com/a7QPywTAgVy7OLjJ7ih1UB7B4RVbq1p0r0lygYzhznFL60JUt9bwrTBDwxNyP6c4h-0Tni17udEo23a1G1zfDgKLKvZ8YIpVp-RjuVHHHWnawKcuTLzGS5Si-s4zRILv_d_DCdmTKsTqaNZmyLyJIHXrMh4Wf5trbg5dF1g_Yp-3OqZNu_X7B9kKEsjRDW5I4n6_kYNMUuiL4TbW0X1fVyVUg2oRa3J2O70gZ-K5qe6tKnjUZDuWTI5liqKbWBnKuHICxLqblQPkGQcLDuI3dhCVmNiWNAnhtbM8IfRcOKz3qC4K1boM4YLfXYeGwJ8_ccTTGpbFIc87Rimqh8sFtw7m00dAEaDKhcYOA6LHpsXIYR9FAp9UhALK6Pc09vygZLgoQiZCIBXnVcBaDaX2wd-uhQArV0ots71HJYuOlXHUjd5kXBG3FYgQ8JGuvAwGwRGrfCGJScl1zAsyTw8cwx1sSe8cyBO3AGcedgwCm1021-W1e2o3reDQgTo1HYdFVTiqF5Fd50n29QWAZFZMJjucAEGLrcR4NAKQSOh60306M_qusYYPTLI97kpcY4uymx_pUmGDDpSf51q5QVAcoO_-NhIlQoqmjFzzTOZCiy8OsEGmtZYx8acipCNTrp8GiVHJ0oHNmpWbdBUtGPpb2ZmqEumLJVzbufiZbzoaaoY6Drf6k0fCJcV-mV1VrfR0SwjNdqHcPtgSQrYedpUUR2wgKNEPA0vsOmAhaEl7yqE0B1Z0vODevpf9uWo=w612-h912-no?authuser=0</item>
+        <item>https://lh3.googleusercontent.com/epGchPefAAL03liPauf8q5q09bJ-MzkKvB70uj_feubMc8uj-lah7CsjJW7BRvYnMhEshHYQ2sGRJb4v-pr-kYjNjhNjVJ9jN4-fWAQziL4ICrYxYgTQwpMBffvPrNzU7f0UjlnTKOB4LrLcGhHwsn-7JFcLs6ab35dFSsid1VEjw7KAjXrYd6HTW-leMOHwl2jDfi5JJYWIuVwlrRwf62WjjvTFDUsGwcqjNaDHF_MCfyF-fGug9i7qi5jl4LHkfMkwa1C_ftPgk23hFB4-yzvSgjeMTmWfqNn4hb3efu0SQEkUoA2bxfjs9HQoXodxDJPduMZjLm5oyj5Md2Ovv4nIQ5Q_KBbvEysOwQg-9f3q_-2KRzVaQqMaEdKEWmY363ke0JelRjJce4_7lOAU6XbIwPDoRbtal3biTFCrSjEuOsFylq4HFN03ACl3lMnCVCawPzuPfEEiIlR89DbDb6IlYF6JiJsgrSUVKyNGrBc36lrIZDTl5-goUkSr4l5RZG0nLesqIIf9w_9Q-2_h-aO3tJkgfcHlDKloPExMdeORx1Qh79RARSL83j_Qenw7hOCIhV_oTa-mIrxJo804uRwh8C7zlHfvps3TFlN3zhgbUqd_XnF9D7eBnjccxIsZ_VM1iIni0E2SdKAr8Kp6xopphtJ9ciQzoOtLxNiW4j7sr-tH4V8w7omcZjcyXSM5XUeBmX-MFdI3de6WPLhORCfp_OWh_qyfoB84qoUaz4oLKv4wz0BUERrzzUs=w624-h912-no?authuser=0</item>
+    </string-array>
+    <string-array name="urlVideo">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+
+</resources>
