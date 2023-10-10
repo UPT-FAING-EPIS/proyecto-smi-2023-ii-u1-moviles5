@@ -6,8 +6,8 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
-    buildToolsVersion "32.0.0"
+    compileSdk 32
+
 
     defaultConfig {
         applicationId "com.example.proyectogym"
@@ -65,7 +65,7 @@ dependencies {
     implementation 'com.github.eddydn:videoplayer:1.10'
     implementation 'com.jakewharton:butterknife:10.2.3'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
-    implementation files('libs\\YouTubeAndroidPlayerApi.jar')
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
     annotationProcessor'com.jakewharton:butterknife-compiler:10.2.3'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

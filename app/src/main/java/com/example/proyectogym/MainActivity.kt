@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.example.proyectogym.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
 
 
         setContentView(R.layout.activity_main)
+        val database = Firebase.database
+        val myRef = database.getReference("message")
+
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -33,6 +37,8 @@ class MainActivity : AppCompatActivity() {
 
         fullScreen()
 
+        //se le declara la variable frameLayout
+        //y se le asiga el identificador al DetailFrameLayout
         val detailFrameLayout: FrameLayout? = findViewById(R.id.detailFrameLayout)
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
 
@@ -57,11 +63,15 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+    //objeto RecyclerView  establece un adaptador en él. El adaptador se crea utilizando una lista de objetos VideoGame
     private fun setupRecyclerView(recyclerView: RecyclerView, onClickListener: View.OnClickListener) {
         recyclerView.adapter = VideoGameViewAdapter(getVideoGames(), onClickListener)
     }
 
+    //esta clase define un adaptador para un objeto RecyclerView que muestra
+    // una lista de objetos ControllerRecyclearView. El adaptador utiliza una clase anidada
+    // ViewHolder para representar cada elemento de la lista, y utiliza un objeto
+    // View.OnClickListener para manejar eventos de clic en los elementos de la lista.
     class VideoGameViewAdapter(private val values: List<ControllerRecyclearView>, private val onClickListener: View.OnClickListener) :
         RecyclerView.Adapter<VideoGameViewAdapter.ViewHolder>() {
 
@@ -71,6 +81,8 @@ class MainActivity : AppCompatActivity() {
             return ViewHolder(view)
         }
 
+        //metodo OnBinViewHolder  utiliza la biblioteca de imagenes
+        //para cargarlas
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val videoGame = values[position]
 
@@ -88,11 +100,17 @@ class MainActivity : AppCompatActivity() {
 
         override fun getItemCount() = values.size
 
+        //define la vista de cada elemento en la lista Busca la imagen PosterImagenView
+        //y la muestra  y se utiliza el metodo BindViewHolder
+
         inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             val posterImageView: ImageView = view.findViewById(R.id.posterImageView)
         }
     }
 
+    //En primer lugar, se inicializa una lista vacía controllerRecyclearView utilizando la clase ArrayList.
+    //Luego, se obtienen los datos necesarios para crear los objetos ControllerRecyclearView
+    //se agrega cada objeto ControllerRecyclearView a la lista controllerRecyclearView. La función devuelve la lista completa
     private fun getVideoGames(): MutableList<ControllerRecyclearView>{
         val controllerRecyclearView:MutableList<ControllerRecyclearView> = ArrayList()
 
