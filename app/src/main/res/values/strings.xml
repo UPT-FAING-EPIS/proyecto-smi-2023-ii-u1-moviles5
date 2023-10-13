@@ -1,119 +1,12 @@
 <resources>
-    <string name="app_name">Bienvenido</string>
-    <string name="navigation_drawer_open">Open </string>
-    <string name="navigation_drawer_close">Close </string>
-    <string name="title_active_login">Bodyrock </string>
-    <string name="password">Contraseña</string>
-    <string name="new_password">Nueva contraseña</string>
-    <string name="current_password">Contraseña actual</string>
-    <string name="name">Nombre completo</string>
-    <string name="email">Email</string>
-    <string name="login">Login</string>
-    <string name="repeat_password">Confirma la contraseña</string>
-    <string name="signup">Sign Up</string>
-    <string name="text_signup">No tienes cuenta?</string>
-    <string name="link_signup">Sin up</string>
-    <string name="all">TODO</string>
-    <string name="user_email">userdefault@gmail.com</string>
-    <string name="user_name">User Default</string>
-    <string name="update_profile">Guardar</string>
-    <string name="delete_account">Eliminar cuenta</string>
-    <string name="change_password">Cambiar contraseña</string>
-    <string name="forget_password">¿olvidaste tu contraseña?</string>
-    <string name="title_check_email">Verificacion de Email</string>
-    <string name="subtitle_check_email">Para completar su registro. ¡Por favor! verifica su correo y después de clic en continuar.</string>
-    <string name="continue_check_email">Continuar</string>
-    <string name="title_account_recovery">Recuperación de la cuenta</string>
-    <string name="subtitle_account_recovery">Ingresa tu email para que se te pueda enviar un correo con los pasos para cambiar tu contraseña.</string>
-    <string name="recovery_account">Enviar</string>
-    <string name="title_update_password">Cambio de contraseña</string>
-    <string name="subtitle_update_password">Por motivos de seguridad para cambiar tu contraseña, primero debes ingresar tu contraseña actual.</string>
-    <string name="title_delete_account">Eliminar cuenta</string>
-    <string name="subtitle_delete_account">Por motivos de seguridad para eliminar tu cuenta por completo, debes de ingresar tu contraseña.</string>
-    <string name="delete">Eliminar</string>
-    <string name="app_name1">PrimaryDetailFlowKotlin</string>
-    <string name="title">Bienvenido a Bodyrock </string>
-    <string name="subtitle">Eliga su Rutina.</string>
-    <string name="all1">TODO</string>
-    <string name="name1">Shadow of the Tomb Raider</string>
-    <string name="date">12 de septiembre de 2018</string>
-    <string name="rating">4.4</string>
-    <string name="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, suscipit exercitationem asperiores, voluptatibus ratione veritatis fugiat tempora, culpa iure repellat temporibus natus facilis alias esse magnam quaerat fuga pariatur?</string>
-    //app store
-    <string name="title_main">Lista de rutinas</string>
-    <string name="sub_title_main">Aprovecha las Super Ofertas </string>
-    <string name="price">40 S./</string>
-    <string name="name_form">Nombre</string>
-    <string name="date_form">Fecha</string>
-    <string name="price_form">Precio</string>
-    <string name="action_form">Guardar</string>
-    <string name="description_form">Descripción</string>
-
-    <integer-array name="id">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </integer-array>
-
-    <string-array name="name">
-        <item>Ejericio Basico para Pectorales </item>
-        <item>Ejericio Basico para Bicep</item>
-        <item>Ejericio Basico para Pierna</item>
-        <item>Ejericio Basico para Tricep</item>
-        <item>Ejericio Basico para Gluteos </item>
-        <item>Cardio para Principiantes </item>
-    </string-array>
-
-    <string-array name="date">
-        <item>Bodyrock </item>
-        <item>Bodyrock</item>
-        <item>Bodyrock</item>
-        <item>Bodyrock</item>
-        <item>Bodyrock</item>
-        <item>Bodyrock</item>
-    </string-array>
-
-    <string-array name="rating">
-        <item>4.4</item>
-        <item>4.3</item>
-        <item>4.8</item>
-        <item>4.8</item>
-        <item>4.4</item>
-        <item>4.8</item>
-    </string-array>
-
-
-    <string-array name="description">
-        <item>Recuerda comenzar con poco peso y con secuencias más bien cortas (no más de 10 a 15 repeticiones) para ir incrementando los ejercicios a medida que vayas obteniendo logros. Los períodos de tiempo en que hagas los ejercicios para el pecho tampoco deberían superar los 30 o 40 minutos, al menos al principio </item>
-        <item>Hay que entrenar bíceps con efectividad, cuidando la técnica y la planificación de la rutina para que sea más cómoda la tarea de desarrollar brazo. Para alcanzar este objetivo, te proponemos a continuación algunos consejos, ejercicios y rutinas adecuadas. Como verás, es posible tener unos bíceps grandes y que esto vaya en sintonía con un resto del tren superior armonizado.</item>
-        <item>Zancadas caminando: 12 repeticiones con cada pierna, 3 series y descanso de medio minuto entre serie y serie. ...
-Sentadillas aéreas: 12 repeticiones, 3 series sin descanso. ...
-Sentadillas con salto: 12 repeticiones, 3 series y 30 segundos de descanso entre serie.</item>
-        <item>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, suscipit exercitationem asperiores, voluptatibus ratione veritatis fugiat tempora, culpa iure repellat temporibus natus facilis alias esse magnam quaerat fuga pariatur?</item>
-        <item>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, suscipit exercitationem asperiores, voluptatibus ratione veritatis fugiat tempora, culpa iure repellat temporibus natus facilis alias esse magnam quaerat fuga pariatur?</item>
-        <item>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, suscipit exercitationem asperiores, voluptatibus ratione veritatis fugiat tempora, culpa iure repellat temporibus natus facilis alias esse magnam quaerat fuga pariatur?</item>
-    </string-array>
-
-    <string-array name="url">
-        <item>https://play-lh.googleusercontent.com/gd16o6_QKsn0UDOpZAejyiSfLY7SwdNmExMiMjK_AFIDTOvh65RYDaWFB3LVg-v_pA=w526-h296-rw</item>
-        <item>https://play-lh.googleusercontent.com/IkDqNALDlHEfn9ryntC1XtdXc_-4hMb12uJE0lry5EGvGk6GdEuFN8lWf8tP-GE2CqbF=w526-h296-rw</item>
-        <item>https://tumejorfisico.com/wp-content/uploads/2022/09/designed_with_EDIT.org-9-1024x576.jpg</item>
-        <item>https://play-lh.googleusercontent.com/q2mgpH428qs6FIT9FU-VTXtYdI6w8yspsw76hQjl7xNX7A8mu2GK9duTnJrKsym7RKE=w526-h296-rw</item>
-        <item>https://play-lh.googleusercontent.com/-A_4bNce9LeykhkUxRkQnK9lmiG8w0GHvmw9sgyA3EMMPupYRG7vSe-r3qxpPz9ACXOI=w526-h296-rw</item>
-        <item>https://i.ytimg.com/vi/6mWIZf-dZCQ/maxresdefault.jpg</item>
-
-    </string-array>
-    <string-array name="urlVideo">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-
-    </string-array>
-
+    <string name="app_name">ProyectoGym</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>
