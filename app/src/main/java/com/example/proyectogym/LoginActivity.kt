@@ -6,9 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.example.proyectogym.Views.HomeActivity
+import com.example.proyectogym.Views.Admin.HomeActivity
 import com.example.proyectogym.Views.Usuario.RegistroUsuarioActivity
 import com.google.firebase.auth.FirebaseAuth
 

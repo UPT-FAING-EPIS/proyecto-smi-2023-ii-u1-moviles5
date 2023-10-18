@@ -59,19 +59,19 @@
                 android:id="@+id/categoryPrincipiante"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PRINCIPIANTES"
+                android:text="PRINCIPIANTE"
                 android:textSize="18dp"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="16dp" />
 
-            <ImageView
-                android:id="@+id/categoryImage"
-                android:layout_width="wrap_content"
-                android:layout_height="250dp"
-                android:src="@drawable/img_2"
-                android:scaleType="centerCrop"
-                android:contentDescription="Imagen de categoría" />
+            <LinearLayout
+                android:id="@+id/principianteContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/categoryIntermedio"
@@ -80,7 +80,35 @@
                 android:text="INTERMEDIO"
                 android:textSize="18dp"
                 android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
                 android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:id="@+id/intermedioContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/categoryAvanzado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AVANZADO"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:id="@+id/avanzadoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

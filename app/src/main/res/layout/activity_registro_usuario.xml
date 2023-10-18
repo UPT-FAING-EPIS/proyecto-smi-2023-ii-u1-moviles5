@@ -3,143 +3,149 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/app_theme">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.card.MaterialCardView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="10dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:cardCornerRadius="25dp"
-            app:cardElevation="8dp"
-            app:cardBackgroundColor="#FFFFFF">
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <TextView
+                android:id="@+id/RegistroDocente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="REGISTRO"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/editTextCorreoUsuario"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/app_theme"
+                android:ems="10"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:textColorHint="@color/material_dynamic_neutral60"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RegistroDocente" />
+
+            <EditText
+                android:id="@+id/editTextNombreUsuario"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/app_theme"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:textColorHint="@color/material_dynamic_neutral60"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCorreoUsuario" />
+
+            <EditText
+                android:id="@+id/editTextApellidoUsuario"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/app_theme"
+                android:ems="10"
+                android:hint="Apellidos"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:textColorHint="@color/material_dynamic_neutral60"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNombreUsuario" />
+
+
+            <EditText
+                android:id="@+id/editTextContraseniaUsuario"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/app_theme"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:textColorHint="@color/material_dynamic_neutral60"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextApellidoUsuario" />
+
+
+            <RadioGroup
+                android:id="@+id/rboGrupoUsuario"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="20dp">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextContraseniaUsuario">
 
-                <TextView
-                    android:id="@+id/RegistroDocente"
+                <RadioButton
+                    android:id="@+id/rboMasculinoPersonal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="REGISTRO"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:text="Masculino"
+                    app:buttonTint="@color/app_theme" />
 
+                <RadioButton
+                    android:id="@+id/rboFemeninoPersonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    app:buttonTint="@color/app_theme" />
+            </RadioGroup>
 
-                <EditText
-                    android:id="@+id/editTextCorreoPersonal"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/edit_text_background"
-                    android:drawablePadding="8dp"
-                    android:drawableTint="@color/app_theme"
-                    android:ems="10"
-                    android:hint="Correo electrónico"
-                    android:inputType="textEmailAddress"
-                    android:paddingStart="8dp"
-                    android:textColorHint="@color/material_dynamic_neutral60"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/RegistroDocente" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/rboGrupoUsuario">
 
-                <EditText
-                    android:id="@+id/editTextNombrePersonal"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/edit_text_background"
-                    android:drawablePadding="8dp"
-                    android:drawableTint="@color/app_theme"
-                    android:ems="10"
-                    android:hint="Nombre"
-                    android:inputType="text"
-                    android:paddingStart="8dp"
-                    android:textColorHint="@color/material_dynamic_neutral60"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextCorreoPersonal" />
-
-                <EditText
-                    android:id="@+id/editTextApellidoPersonal"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/edit_text_background"
-                    android:drawablePadding="8dp"
-                    android:drawableTint="@color/app_theme"
-                    android:ems="10"
-                    android:hint="Apellidos"
-                    android:inputType="text"
-                    android:paddingStart="8dp"
-                    android:textColorHint="@color/material_dynamic_neutral60"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextNombrePersonal" />
-
-
-                <RadioGroup
-                    android:id="@+id/rboGrupoPersonal"
+                <Button
+                    android:id="@+id/guardarUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextApellidoPersonal">
-
-                    <RadioButton
-                        android:id="@+id/rboMasculinoPersonal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Masculino"
-                        app:buttonTint="@color/app_theme" />
-
-                    <RadioButton
-                        android:id="@+id/rboFemeninoPersonal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Femenino"
-                        app:buttonTint="@color/app_theme" />
-                </RadioGroup>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintTop_toBottomOf="@+id/rboGrupoPersonal">
-
-                    <Button
-                        android:id="@+id/guardarPersonalButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/app_theme"
-                        android:text="Guardar"
-                        android:textSize="16dp"
-                        app:cornerRadius="8dp" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+                    android:backgroundTint="@color/app_theme"
+                    android:text="Guardar"
+                    android:textSize="16dp"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
