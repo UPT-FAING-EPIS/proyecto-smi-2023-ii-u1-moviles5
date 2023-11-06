@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group>
+    <item android:id="@+id/Nav_inicio"
+        android:icon="@drawable/abc_vector_test"
+        android:title="Inicio"/>
+    <item android:id="@+id/Nav_promociones"
+        android:icon="@drawable/abc_vector_test"
+        android:title="Promociones"/>
+    <item android:id="@+id/Nav_CerrarSesion"
+        android:icon="@drawable/abc_vector_test"
+        android:title="Cerrar Sesion"/>
+    <item android:id="@+id/Nav_Membresia"
+        android:icon="@drawable/abc_vector_test"
+        android:title="Membresia"/>
+</group>
+
+</menu>

@@ -1,26 +1,36 @@
 {
   "project_info": {
-    "project_number": "561566791965",
-    "project_id": "bdgym-c32fb",
-    "storage_bucket": "bdgym-c32fb.appspot.com"
+    "project_number": "255766537938",
+    "project_id": "proyectogym-b5f7f",
+    "storage_bucket": "proyectogym-b5f7f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:561566791965:android:ab96f76f3572e87c8649f4",
+        "mobilesdk_app_id": "1:255766537938:android:71e27161b50ee31b04ef0b",
         "android_client_info": {
           "package_name": "com.example.proyectogym"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "255766537938-5njg07jrrogc81ggtjp1if9t7hourfd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDYk31erD-UU2a3-HZrybDsxIqAtaY6g2c"
+          "current_key": "AIzaSyAzDeV7v-ZPeRv3PtDwTyFdLjHAya-1dJA"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255766537938-5njg07jrrogc81ggtjp1if9t7hourfd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
