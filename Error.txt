@@ -1,0 +1,2 @@
+Confusion de usuarios al enviar los avances del proyecto por la configuracion del github en las PC's de la universidad.
+-ReynaldoChambe
