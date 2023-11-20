@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import com.example.proyectogym.R
 import com.example.proyectogym.Views.UserSingleton
 
-class NivelActivity : AppCompatActivity() {
+class ObjetivoZonaActivity : AppCompatActivity() {
 
     private var selectedButton: Button? = null
     private val defaultButtonBackgroundResId: Int = R.drawable.fondo_blanco_con_borde
@@ -17,26 +16,33 @@ class NivelActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nivel)
+        setContentView(R.layout.activity_objetivo_zona)
 
-        val buttonPrincipiante = findViewById<Button>(R.id.buttonPrincipiante)
-        val buttonIntermedio = findViewById<Button>(R.id.buttonIntermedio)
-        val buttonAvanzado = findViewById<Button>(R.id.buttonAvanzado)
-        val buttonSiguiente1 = findViewById<Button>(R.id.buttonSiguiente1)
+        val buttonTodo = findViewById<Button>(R.id.buttonTodo)
+        val buttonBrazo = findViewById<Button>(R.id.buttonBrazo)
+        val buttonPecho = findViewById<Button>(R.id.buttonPecho)
+        val buttonAbdominales = findViewById<Button>(R.id.buttonAbdominales)
+        val buttonPiernas = findViewById<Button>(R.id.buttonPiernas)
 
-        buttonPrincipiante.setOnClickListener { onButtonClick(it) }
-        buttonIntermedio.setOnClickListener { onButtonClick(it) }
-        buttonAvanzado.setOnClickListener { onButtonClick(it) }
+        val buttonSiguiente = findViewById<Button>(R.id.buttonSiguiente3)
 
-        buttonSiguiente1.setOnClickListener {
+        buttonTodo.setOnClickListener { onButtonClick(it) }
+        buttonBrazo.setOnClickListener { onButtonClick(it) }
+        buttonPecho.setOnClickListener { onButtonClick(it) }
+        buttonAbdominales.setOnClickListener { onButtonClick(it) }
+        buttonPiernas.setOnClickListener { onButtonClick(it) }
+
+        buttonSiguiente.setOnClickListener {
             if (selectedButton != null) {
                 val usuario = UserSingleton.getInstance()
-                usuario.nivel = selectedButtonText
-                val intent = Intent(this@NivelActivity, ObjetivoActivity::class.java)
+                usuario.zona = selectedButtonText
+                val intent = Intent(this@ObjetivoZonaActivity, PesoTallaActivity::class.java)
                 startActivity(intent)
             }
         }
+
     }
+
 
     fun onButtonClick(view: View) {
         val clickedButton = view as Button
@@ -50,6 +56,8 @@ class NivelActivity : AppCompatActivity() {
             selectedButton = clickedButton
             selectedButtonText = clickedButton.text.toString()
 
+
+
         } else {
 
             clickedButton.setBackgroundResource(defaultButtonBackgroundResId)
@@ -60,5 +68,4 @@ class NivelActivity : AppCompatActivity() {
 
         }
     }
-
 }

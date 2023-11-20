@@ -11,42 +11,52 @@
     tools:context=".Views.Usuario.NivelActivity">
 
     <TextView
-        android:id="@+id/textViewSexo"
+        android:id="@+id/textPesoAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Cuál es tu nivel?"
+        android:text="Ingresa Peso y Altura"
         android:textSize="22dp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_marginTop="180dp"
         />
 
-    <Button
-        android:id="@+id/buttonPrincipiante"
-        style="@style/BotonRedondeado"
+    <TextView
+        android:id="@+id/textAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Principiante"
-        android:layout_marginTop="10dp"
-        android:onClick="onButtonClick" />
+        android:text="Ingresa Altura (cm)"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
 
-    <Button
-        android:id="@+id/buttonIntermedio"
-        style="@style/BotonRedondeado"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/txtAltura"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Intermedio"
-        android:onClick="onButtonClick" />
+        android:ems="10"
+        android:inputType="number" />
 
-    <Button
-        android:id="@+id/buttonAvanzado"
-        style="@style/BotonRedondeado"
+    <TextView
+        android:id="@+id/textPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Avanzado"
-        android:onClick="onButtonClick" />
+        android:text="Ingresa Peso (kg)"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
 
     <View
         android:layout_width="match_parent"
@@ -54,12 +64,12 @@
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/buttonSiguiente1"
+        android:id="@+id/buttonSiguiente4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:backgroundTint="@color/app_theme"
-        android:text="SIGUIENTE"
+        android:text="FINALIZAR"
         android:layout_marginTop="10dp"
         />
 </LinearLayout>

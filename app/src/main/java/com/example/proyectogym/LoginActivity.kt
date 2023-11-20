@@ -3,7 +3,6 @@ package com.example.proyectogym
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -12,13 +11,12 @@ import androidx.appcompat.app.AlertDialog
 import com.example.proyectogym.Models.Usuario
 import com.example.proyectogym.Views.Admin.HomeActivity
 import com.example.proyectogym.Views.UserSingleton
-import com.example.proyectogym.Views.Usuario.GeneroActivity
+import com.example.proyectogym.Views.Usuario.NivelActivity
 import com.example.proyectogym.Views.Usuario.MainActivity
 import com.example.proyectogym.Views.Usuario.RegistroUsuarioActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
@@ -61,8 +59,8 @@ class LoginActivity : AppCompatActivity() {
                                 ValueEventListener {
                                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                                     try {
-                                        // Intenta obtener los datos del usuario
                                         if (dataSnapshot.exists()) {
+
                                             for (userSnapshot in dataSnapshot.children) {
                                                 val userData = userSnapshot.getValue(Usuario::class.java)
                                                 if (userData != null) {
@@ -72,8 +70,13 @@ class LoginActivity : AppCompatActivity() {
                                                     usuarioLogeado.apellido = userData.apellido
                                                     usuarioLogeado.sexo = userData.sexo
 
-                                                    val intent = Intent(this@LoginActivity, GeneroActivity::class.java)
-                                                    startActivity(intent)
+                                                    if(userData.nivel.isEmpty() && userData.zona.isEmpty() && userData.objetivo.isEmpty()){
+                                                        val intent = Intent(this@LoginActivity, NivelActivity::class.java)
+                                                        startActivity(intent)
+                                                    }else{
+                                                        val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                                                        startActivity(intent)
+                                                    }
                                                 }
                                             }
                                         } else {

@@ -7,6 +7,10 @@ class UserSingleton private constructor() {
     var apellido: String = ""
     var sexo: String = ""
 
+    /* Datos adicionales */
+    var nivel: String = ""
+    var objetivo: String = ""
+    var zona: String = ""
 
     companion object {
         @Volatile

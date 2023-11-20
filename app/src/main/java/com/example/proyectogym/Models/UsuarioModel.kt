@@ -10,6 +10,11 @@ data class Usuario(
     val contrasenia: String = "",
     val sexo: String = "",
     val tipoUsuario: Int = 0,
+    val peso: String = "",
+    val talla: String = "",
+    val zona: String = "",
+    val objetivo: String = "",
+    val nivel: String = ""
 )
 
 

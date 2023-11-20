@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.proyectogym.LoginActivity
 import com.example.proyectogym.R
 import com.example.proyectogym.Views.UserSingleton
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -27,7 +28,11 @@ class PerfilAdminActivity : AppCompatActivity() {
         //Cerrar Sesión
         logoutButton.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
-            onBackPressed()
+
+            val intent = Intent(this@PerfilAdminActivity, LoginActivity::class.java)
+            startActivity(intent)
+
+            finish()
         }
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)

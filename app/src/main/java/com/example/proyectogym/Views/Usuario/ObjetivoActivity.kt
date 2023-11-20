@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import com.example.proyectogym.R
 import com.example.proyectogym.Views.UserSingleton
 
-class NivelActivity : AppCompatActivity() {
+class ObjetivoActivity : AppCompatActivity() {
 
     private var selectedButton: Button? = null
     private val defaultButtonBackgroundResId: Int = R.drawable.fondo_blanco_con_borde
@@ -17,22 +16,23 @@ class NivelActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nivel)
+        setContentView(R.layout.activity_objetivo)
 
-        val buttonPrincipiante = findViewById<Button>(R.id.buttonPrincipiante)
-        val buttonIntermedio = findViewById<Button>(R.id.buttonIntermedio)
-        val buttonAvanzado = findViewById<Button>(R.id.buttonAvanzado)
-        val buttonSiguiente1 = findViewById<Button>(R.id.buttonSiguiente1)
+        val buttonPerder = findViewById<Button>(R.id.buttonPerder)
+        val buttonAumentar = findViewById<Button>(R.id.buttonAumentar)
+        val buttonMantener = findViewById<Button>(R.id.buttonMantener)
+        val buttonSiguiente = findViewById<Button>(R.id.buttonSiguiente2)
 
-        buttonPrincipiante.setOnClickListener { onButtonClick(it) }
-        buttonIntermedio.setOnClickListener { onButtonClick(it) }
-        buttonAvanzado.setOnClickListener { onButtonClick(it) }
+        buttonPerder.setOnClickListener { onButtonClick(it) }
+        buttonAumentar.setOnClickListener { onButtonClick(it) }
+        buttonMantener.setOnClickListener { onButtonClick(it) }
 
-        buttonSiguiente1.setOnClickListener {
+        buttonSiguiente.setOnClickListener {
             if (selectedButton != null) {
                 val usuario = UserSingleton.getInstance()
-                usuario.nivel = selectedButtonText
-                val intent = Intent(this@NivelActivity, ObjetivoActivity::class.java)
+                usuario.objetivo = selectedButtonText
+
+                val intent = Intent(this@ObjetivoActivity, ObjetivoZonaActivity::class.java)
                 startActivity(intent)
             }
         }
@@ -57,8 +57,6 @@ class NivelActivity : AppCompatActivity() {
 
             selectedButton = null
             selectedButtonText = ""
-
         }
     }
-
 }

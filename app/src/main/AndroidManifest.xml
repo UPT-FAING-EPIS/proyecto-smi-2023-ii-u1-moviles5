@@ -15,13 +15,20 @@
         android:theme="@style/Theme.ProyectoGym"
         tools:targetApi="31">
         <activity
-            android:name=".Views.Usuario.GeneroActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Views.Usuario.ObjetivoZona"
+            android:name=".Views.Usuario.PesoTallaActivity"
+            android:theme="@style/RegistroGYM"
             android:exported="false" />
         <activity
             android:name=".Views.Usuario.NivelActivity"
+            android:exported="false"
+            android:theme="@style/RegistroGYM" />
+        <activity
+            android:name=".Views.Usuario.ObjetivoZonaActivity"
+            android:theme="@style/RegistroGYM"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Usuario.ObjetivoActivity"
+            android:theme="@style/RegistroGYM"
             android:exported="false" />
         <activity
             android:name=".Views.Usuario.MainActivity"
@@ -32,8 +39,7 @@
         <activity
             android:name=".Views.Admin.ZonaActivity"
             android:exported="false"
-            android:label="@string/title_activity_zona"
-            android:theme="@style/Theme.ProyectoGym" />
+            android:label="@string/title_activity_zona" />
         <activity
             android:name=".Views.Admin.AddEjercicioActivity"
             android:exported="false" />
