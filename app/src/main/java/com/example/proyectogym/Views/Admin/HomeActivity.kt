@@ -116,6 +116,7 @@ class HomeActivity : AppCompatActivity() {
 
                     intent.putExtra("imagenUrl", imagenUrl)
                     intent.putExtra("textoCategoria", nombre)
+                    intent.putExtra("nivelCategoria", nivel)
 
                     startActivity(intent)
                 }

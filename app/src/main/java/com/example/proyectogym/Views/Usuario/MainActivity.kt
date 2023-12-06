@@ -100,29 +100,30 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                /*imageView.setOnClickListener {
-                    val intent = Intent(this, ListEjerciciosActivity::class.java)
+                imageView.setOnClickListener {
+                    val intent = Intent(this, ListEjerciciosUsuarioActivity::class.java)
 
                     intent.putExtra("imagenUrl", imagenUrl)
                     intent.putExtra("textoCategoria", nombre)
 
                     startActivity(intent)
-                }*/
+                }
             }
 
-            val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)
+            val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation_usuario)
+            bottomNavigationView.selectedItemId = R.id.navigation_home_usuario
             bottomNavigationView.setOnNavigationItemSelectedListener { item ->
                 when (item.itemId) {
-                    R.id.navigation_home -> {
-                        startActivity(Intent(this, HomeActivity::class.java))
+                    R.id.navigation_home_usuario -> {
+                        startActivity(Intent(this, MainActivity::class.java))
                         true
                     }
-                    R.id.navigation_zonas -> {
-                        startActivity(Intent(this, ZonaActivity::class.java))
+                    R.id.navigation_informe_usuario -> {
+                        startActivity(Intent(this, InformesActivity::class.java))
                         true
                     }
-                    R.id.navigation_perfil -> {
-                        startActivity(Intent(this, PerfilAdminActivity::class.java))
+                    R.id.navigation_perfil_usuario -> {
+                        startActivity(Intent(this, PerfilUsuarioActivity::class.java))
                         true
                     }
                     else -> false

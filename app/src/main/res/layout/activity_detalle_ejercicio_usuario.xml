@@ -15,19 +15,20 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
+            android:id="@+id/VistaPrincipal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imgDetalle"
+                android:id="@+id/imgDetalleUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:scaleType="fitCenter"
                 />
 
             <TextView
-                android:id="@+id/textTituloDetalle"
+                android:id="@+id/textTituloDetalleUsuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Texto"
@@ -43,7 +44,7 @@
                 />
 
             <TextView
-                android:id="@+id/textSubTituloDetalle"
+                android:id="@+id/textSubTituloDetalleUsuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nuevo Texto"
@@ -55,7 +56,7 @@
                 app:layout_constraintEnd_toEndOf="parent"/>
 
             <TextView
-                android:id="@+id/textDescripcionDetalle"
+                android:id="@+id/textDescripcionDetalleUsuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nuevo Texto"
@@ -66,7 +67,7 @@
                 app:layout_constraintEnd_toEndOf="parent"/>
 
             <TextView
-                android:id="@+id/textZonasDetalle"
+                android:id="@+id/textZonasDetalleUsuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Zonas Principales"
@@ -79,9 +80,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />
-
             <TextView
-                android:id="@+id/textZonaPrincipal"
+                android:id="@+id/textValoresZonaPrincipal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nuevo Texto"
@@ -91,6 +91,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
+            <Button
+                android:id="@+id/btnIniciarEjercicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/app_theme"
+                android:text="INICIAR" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

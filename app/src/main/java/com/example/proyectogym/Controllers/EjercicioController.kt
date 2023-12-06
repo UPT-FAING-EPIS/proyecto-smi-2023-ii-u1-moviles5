@@ -10,4 +10,12 @@ class EjercicioController {
     fun agregarEjercicio(ejercicio: Ejercicio, callback: (Boolean) -> Unit) {
         ejercicioModel.addEjercicio(ejercicio, callback)
     }
+
+    fun obtenerListaEjerciciosPorNivel(nivel: String, callback: (List<Ejercicio>?) -> Unit) {
+        ejercicioModel.getListaEjerciciosPorNivel(nivel, callback)
+    }
+
+    fun obtenerEjercicioPorId(ejercicioId: String, callback: (Ejercicio?) -> Unit) {
+        ejercicioModel.getEjercicioPorId(ejercicioId, callback)
+    }
 }

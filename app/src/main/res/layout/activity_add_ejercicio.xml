@@ -7,30 +7,32 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-353dp">
 
         <LinearLayout
+            android:id="@+id/principal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Registro"
-                android:textSize="18sp"
-                android:textStyle="bold"
                 android:layout_gravity="center"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
+                android:text="Registro"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/GifEjercicio"
@@ -38,16 +40,16 @@
                 android:layout_height="250dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/img_1"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_1" />
 
             <Button
-                android:id="@+id/seleccionarImagenButton"
+                android:id="@+id/buttonSeleccionar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:backgroundTint="@color/app_theme"
                 android:text="Seleccionar" />
 
@@ -55,26 +57,35 @@
                 android:id="@+id/tituloEjercicio"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="Título"
-                />
+                android:padding="10dp" />
 
             <EditText
                 android:id="@+id/cantidadEjercicio"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/edit_text_background"
-                android:hint="Cantidad / Tiempo"
-                />
+                android:hint="Cantidad"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/tiempoEjercicio"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Tiempo (en segundos)"
+                android:padding="10dp" />
 
             <EditText
                 android:id="@+id/textDescripcionEjercicio"
@@ -82,33 +93,33 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:padding="10dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="Descripción"
                 android:inputType="textMultiLine"
                 android:lines="5"
-                />
+                android:padding="10dp" />
 
-            <Spinner
-                android:id="@+id/cboNivelEjercicio"
+            <LinearLayout
+                android:id="@+id/linearZonasPrincipales"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/edit_text_background"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
-                android:entries="@array/nivel_array"/>
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Zona principal"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                />
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/zonasPrincipales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Zona principal"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/buttonGuardarEjercicio"

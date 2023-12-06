@@ -54,4 +54,9 @@
     </string>
     <string name="title_activity_zona">ZonaActivity</string>
     <string name="title_activity_perfil_admin">PerfilAdminActivity</string>
+    <string name="bajo_peso">Bajo peso</string>
+    <string name="peso_normal">Peso normal</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="obesidad">Obesidad</string>
+    <string name="resultado_imc">Tu IMC es %.2f. %s</string>
 </resources>
