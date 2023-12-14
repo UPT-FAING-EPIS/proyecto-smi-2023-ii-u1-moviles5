@@ -111,10 +111,14 @@ class MainActivity : AppCompatActivity() {
             }
 
             val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation_usuario)
-            bottomNavigationView.selectedItemId = R.id.navigation_home_usuario
+            bottomNavigationView.selectedItemId = R.id.navigation_ejercicios_usuario
             bottomNavigationView.setOnNavigationItemSelectedListener { item ->
                 when (item.itemId) {
                     R.id.navigation_home_usuario -> {
+                        startActivity(Intent(this, Ejercicios::class.java))
+                        true
+                    }
+                    R.id.navigation_ejercicios_usuario -> {
                         startActivity(Intent(this, MainActivity::class.java))
                         true
                     }

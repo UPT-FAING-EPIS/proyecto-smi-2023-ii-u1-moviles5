@@ -77,4 +77,32 @@ class EjercicioModel {
             })
     }
 
+
+    fun getEjerciciosPorNivelYZona(nivel: String, zona: String, callback: (List<Ejercicio>?) -> Unit) {
+        ejercicioReference.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val listaEjercicios = mutableListOf<Ejercicio>()
+                for (childSnapshot in snapshot.children) {
+                    val ejercicio = childSnapshot.getValue(Ejercicio::class.java)
+                    ejercicio?.let {
+                        if (it.nivel == nivel && it.zonas?.contains(zona) == true) {
+                            listaEjercicios.add(it)
+                        } else if (it.nivel == nivel && zona == "TODO EL CUERPO") {
+                            listaEjercicios.add(it)
+                        } else {
+
+                        }
+                    }
+                }
+                callback(listaEjercicios)
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                // Manejar error de lectura
+                callback(null)
+            }
+        })
+    }
+
+
 }

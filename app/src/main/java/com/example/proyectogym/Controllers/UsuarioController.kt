@@ -1,5 +1,6 @@
 package com.example.proyectogym.Controllers
 
+import com.example.proyectogym.Models.Ejercicio
 import com.example.proyectogym.Models.Usuario
 import com.example.proyectogym.Models.UsuarioModel
 
@@ -9,4 +10,5 @@ class UsuarioController {
     fun agregarUsuario(usuario: Usuario, callback: (Boolean) -> Unit) {
         usuarioModel.addUsuario(usuario, callback)
     }
+
 }

@@ -18,4 +18,8 @@ class EjercicioController {
     fun obtenerEjercicioPorId(ejercicioId: String, callback: (Ejercicio?) -> Unit) {
         ejercicioModel.getEjercicioPorId(ejercicioId, callback)
     }
+
+    fun obtenerEjerciciosPorNivelYZona(nivel: String, zona: String, callback: (List<Ejercicio>?) -> Unit) {
+        ejercicioModel.getEjerciciosPorNivelYZona(nivel, zona, callback)
+    }
 }

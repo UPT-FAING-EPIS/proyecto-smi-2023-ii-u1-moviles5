@@ -15,6 +15,9 @@
         android:theme="@style/Theme.ProyectoGym"
         tools:targetApi="31">
         <activity
+            android:name=".Views.Usuario.Ejercicios"
+            android:exported="false" />
+        <activity
             android:name=".Views.Usuario.DetalleEjercicioUsuarioActivity"
             android:exported="false" />
         <activity

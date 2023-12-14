@@ -11,6 +11,7 @@ import androidx.appcompat.app.AlertDialog
 import com.example.proyectogym.Models.Usuario
 import com.example.proyectogym.Views.Admin.HomeActivity
 import com.example.proyectogym.Views.UserSingleton
+import com.example.proyectogym.Views.Usuario.Ejercicios
 import com.example.proyectogym.Views.Usuario.NivelActivity
 import com.example.proyectogym.Views.Usuario.MainActivity
 import com.example.proyectogym.Views.Usuario.RegistroUsuarioActivity
@@ -74,7 +75,7 @@ class LoginActivity : AppCompatActivity() {
                                                         val intent = Intent(this@LoginActivity, NivelActivity::class.java)
                                                         startActivity(intent)
                                                     }else{
-                                                        val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                                                        val intent = Intent(this@LoginActivity, Ejercicios::class.java)
                                                         startActivity(intent)
                                                     }
                                                 }
